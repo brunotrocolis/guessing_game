@@ -7,7 +7,15 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
+    let mut score = 100.0;
+
     loop {
+
+        if f64::trunc(score  * 100.0) / 100.0 <= 0.0 {
+            score = 0.0;
+            break;
+        }
+
         println!("Por favo, entre com o seu palpite.");
 
         let mut guess = String::new();
@@ -31,5 +39,8 @@ fn main() {
                 break;
             }
         }
+
+        score = score/2.0;
     }
+    println!("Sua pontuação foi de {:.2}", score);
 }
