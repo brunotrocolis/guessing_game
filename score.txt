@@ -1,0 +1,8 @@
+Bruno Trócolis: 25.00
+Bruno: 6.25
+Trócolis: 3.12
+Bruno: 3.12
+Bruno: 3.12
+Bruno: 1.56
+Bruno: 0.78
+Teste: 0.20
